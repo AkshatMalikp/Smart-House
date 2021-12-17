@@ -4,11 +4,13 @@ import { StyleSheet, Text, View,Image, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from "react-native-safe-area-context";
 import { ScrollView } from 'react-native';
 import { IMG } from './src/features/ImageCard/image';
+import { Device } from './src/features/Device/device';
 export default function App() {
   return (
     
 <SafeAreaView style={styles.container}>
   <ScrollView>
+    
   <View style={styles.heading}>
 
   
@@ -27,6 +29,14 @@ export default function App() {
         <IMG title="Living Room" temp="20" link = {require("./src/assets/livingroom.jpg")} />
         </ScrollView>
         <Text style={{marginTop:20,marginBottom:10,fontSize:24}}>Devices</Text>
+        <View style={styles.devicebox}>
+          <Device devicename='Microwave' link={require("./src/assets/microwave.jpg")}/>
+          <Device devicename='Rangehood' link={require("./src/assets/Rangehood.jpg")}/>
+        </View>
+        <View style={styles.devicebox}>
+          <Device devicename='Fridge' link={require("./src/assets/Fridge.jpg")}/>
+          <Device devicename='Table Fan' link={require("./src/assets/fan.jpg")}/>
+        </View>
         </ScrollView>
         
       <StatusBar style="auto" />
@@ -44,9 +54,15 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     paddingLeft: 20,
     fontSize: 5,
+    
   },
   heading:{
     flexDirection:'row',
   },
+  devicebox:{
+    flexDirection:'row',
+    marginBottom:10,
+  },
+
   
 });

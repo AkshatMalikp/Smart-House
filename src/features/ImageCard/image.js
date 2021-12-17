@@ -4,7 +4,9 @@ import { View,StyleSheet,Image, TouchableOpacity,Text } from "react-native";
 
 export const IMG = (props) => {
     return(
-        <TouchableOpacity>
+        <TouchableOpacity onPress = {()=>{
+                         alert("You pressed")
+        }}>
         <View style={styles.container}>
         
          <Image style={styles.imagestyle} source={props.link}/>
@@ -29,10 +31,13 @@ const styles=StyleSheet.create({
         marginRight:20,
         borderWidth:1,
         borderColor:'silver',
+        borderRadius:20,
+        backgroundColor:'rgba(192,192,192,0.4)',
     }, 
     heading:{
+
         flexDirection:"row",
-        backgroundColor:'rgba(192,192,192,0.4)',
+        marginLeft:15,
         
     },
 });
