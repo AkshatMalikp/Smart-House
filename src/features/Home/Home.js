@@ -1,33 +1,99 @@
-import React from "react";
-
-import { StyleSheet, Text, View,Image } from 'react-native';
-
-
-
-export const HomeScreen =()=>{
-return(
+import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+import { StyleSheet, Text, View,Image, TouchableOpacity} from 'react-native';
+import { SafeAreaView } from "react-native-safe-area-context";
+import { ScrollView } from 'react-native';
+import { IMG } from '../ImageCard/image';
+import { Device } from '../Device/device';
+import { RoomN } from '../../infrastructure/navigation/roomsnavigatior';
+export const Home=({navigation})=> {
+  return (
+    
 <SafeAreaView style={styles.container}>
-<Text style={{ fontWeight:'100',fontSize:15,}} >Welcome Home <Image style={{width:50,height:50,paddingLeft:1000,}} source={require("./src/assets/pp.jpg")}/></Text>
+  <ScrollView>
+    
+  <View style={styles.heading}>
+
+  
+<Text style={{ fontWeight:'100',fontSize:15,flex:2}} >Welcome Home </Text>
+<Image style={{width:80,height:80,paddingLeft:10,borderWidth:0.5,borderRadius:15,}} source={require("../../assets/pp.jpg")}/>
+</View>
       
-      <Text style={{marginTop:10, fontWeight:'bold',fontSize:30,}}>Akshat Malik</Text>
+      <Text style={{ fontWeight:'bold',fontSize:30,marginBottom:30}}>Akshat Malik</Text>
       
+
+        <Text style={{marginBottom:10,fontSize:24}}>Rooms</Text>
+        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+          <TouchableOpacity
+          onPress={()=>{
+            navigation.navigate('BathRoom')
+          }
+          }
+          >
+
+          
+        <IMG title="Bathroom" temp="24" link = {require("../../assets/bathroom.jpg")} />
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={()=>{
+            navigation.navigate('Bedroom')
+          }
+          }
+          >
+        <IMG title="Bedroom" temp="27" link = {require("../../assets/bedroom.jpg")} />
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={()=>{
+            navigation.navigate('Kitchen')
+          }
+          }
+          >
+        <IMG title="Kitchen" temp="21" link = {require("../../assets/bathroom.jpg")} />
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={()=>{
+            navigation.navigate('Livingroom')
+          }
+          }
+          >
+        <IMG title="Living Room" temp="20" link = {require("../../assets/livingroom.jpg")} />
+        </TouchableOpacity>
+        </ScrollView>
+        <Text style={{marginTop:20,marginBottom:10,fontSize:24}}>Devices</Text>
+        <View style={styles.devicebox}>
+          <Device devicename='Microwave' link={require("../../assets/microwave.jpg")}/>
+          <Device devicename='Rangehood' link={require("../../assets/Rangehood.jpg")}/>
+        </View>
+        <View style={styles.devicebox}>
+          <Device devicename='Fridge' link={require("../../assets/Fridge.jpg")}/>
+          <Device devicename='Table Fan' link={require("../../assets/fan.jpg")}/>
+        </View>
+        </ScrollView>
+        
       <StatusBar style="auto" />
 
 </SafeAreaView>
-
-);
-
-};
-
+  );
+}
 
 const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+
+    alignItems: 'flex-start',
+    paddingTop: 20,
+    paddingLeft: 20,
+    fontSize: 5,
+    
+  },
+  heading:{
+    flexDirection:'row',
+  },
+  devicebox:{
+    flexDirection:'row',
+    marginBottom:10,
+  },
+
   
-      alignItems: 'flex-start',
-      paddingTop: 70,
-      paddingLeft: 20,
-      fontSize: 5,
-    },
-  });
+});

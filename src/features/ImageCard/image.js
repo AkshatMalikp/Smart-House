@@ -1,12 +1,7 @@
 import React from "react";
 import { View,StyleSheet,Image, TouchableOpacity,Text } from "react-native";
-
-import { RoomN } from "../../infrastructure/navigation/roomsnavigatior";
 export const IMG = (props,{navigation}) => {
     return(
-        <TouchableOpacity onPress = {()=>{
-                         navigation.navigate('Bedroom')
-        }}>
         <View style={styles.container}>
         
          <Image style={styles.imagestyle} source={props.link}/>
@@ -15,7 +10,6 @@ export const IMG = (props,{navigation}) => {
          <Text style={{flex:1,fontSize:20,}}>{props.temp} C</Text>   
          </View>
         </View>
-        </TouchableOpacity>
     );
 };
 
