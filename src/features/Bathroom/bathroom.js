@@ -52,7 +52,7 @@ export const BathRoom=()=>{
             
           </ScrollView>
 
-          <Text style={{fontSize:25,marginTop:20,}}>Intensive</Text>
+          <Text style={{fontSize:25,marginTop:20,fontStyle:'italic',}}>Intensive</Text>
           <Text style={{justifyContent:'center',alignSelf:'center',marginTop:20,marginRight:15,fontSize:20,color:'black'}}> {range}</Text>
           <Slider 
              style={{}}
@@ -60,7 +60,7 @@ export const BathRoom=()=>{
              maximumValue={1}
              mininumTrackintColor='white'
              maximumTrackTintColor='blue'
-             value={0.5}
+             value={0}
              onValueChange={value=>setRange(parseInt(value*100) +'%')}
              
              />
@@ -69,6 +69,7 @@ export const BathRoom=()=>{
                <Text style={{fontSize:17, color:'silver'}}>100%</Text>
              </View>
 
+             <Text style={{fontSize:25,marginTop:20,fontStyle:'italic'}} >Timer</Text>   
              
           </ScrollView>
 

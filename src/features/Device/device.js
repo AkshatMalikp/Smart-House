@@ -22,7 +22,6 @@ export const Device=(props)=>{
 
 const styles=StyleSheet.create({
     conatiner:{
-        borderWidth:1,
         flex:1,
         marginRight:10,
         backgroundColor:'rgba(192,192,192,0.4)',

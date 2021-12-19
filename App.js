@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View,Image, TouchableOpacity } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { RoomN } from './src/infrastructure/navigation/roomsnavigatior';
 export default function App() {
   return(

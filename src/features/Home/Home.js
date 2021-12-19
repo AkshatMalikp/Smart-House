@@ -5,7 +5,6 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { ScrollView } from 'react-native';
 import { IMG } from '../ImageCard/image';
 import { Device } from '../Device/device';
-import { RoomN } from '../../infrastructure/navigation/roomsnavigatior';
 export const Home=({navigation})=> {
   return (
     
@@ -14,15 +13,17 @@ export const Home=({navigation})=> {
     
   <View style={styles.heading}>
 
-  
-<Text style={{ fontWeight:'100',fontSize:15,flex:2}} >Welcome Home </Text>
-<Image style={{width:80,height:80,paddingLeft:10,borderWidth:0.5,borderRadius:15,}} source={require("../../assets/pp.jpg")}/>
+ <View style={{flexDirection:'column'}}>
+<Text style={{ fontWeight:'100',fontSize:15,fontStyle:'italic',marginBottom:10,}} >Welcome Home </Text>
+<Text style={{ fontWeight:'bold',fontSize:30,marginBottom:30,fontStyle:'italic'}}>Akshat Malik</Text>
+</View> 
+<Image style={{width:80,height:80,paddingLeft:10,borderWidth:0.5,borderRadius:15,marginRight:15,}} source={require("../../assets/pp.jpg")}/>
 </View>
       
-      <Text style={{ fontWeight:'bold',fontSize:30,marginBottom:30}}>Akshat Malik</Text>
+      
       
 
-        <Text style={{marginBottom:10,fontSize:24}}>Rooms</Text>
+        <Text style={{marginBottom:10,fontSize:24,fontStyle:'italic'}}>Rooms</Text>
         <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
           <TouchableOpacity
           onPress={()=>{
@@ -89,6 +90,7 @@ const styles = StyleSheet.create({
   },
   heading:{
     flexDirection:'row',
+    justifyContent:'space-between'
   },
   devicebox:{
     flexDirection:'row',

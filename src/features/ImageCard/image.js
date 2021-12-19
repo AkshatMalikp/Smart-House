@@ -19,6 +19,7 @@ const styles=StyleSheet.create({
     imagestyle:{
         width:190,
         height:300,
+        borderRadius:20,
       },
     container:{
         

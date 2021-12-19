@@ -63,9 +63,11 @@ const styles=StyleSheet.create({
         fontWeight:'900',
         fontSize:25,
         color:'white',
+        fontStyle:'italic',
     },
     switchh:{
        marginTop:145,
+       marginRight:15,
 
     }
 
