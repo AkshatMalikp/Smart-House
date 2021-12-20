@@ -4,6 +4,7 @@ import { Bedroom } from "../../features/BedRoom/bedroom";
 import { BathRoom } from "../../features/Bathroom/bathroom";
 import { Kitchen } from "../../features/Kitchen/kitchen";
 import { Livingroom } from "../../features/LivingRoom/livingroom";
+import { Settings } from "../../features/Setting/settings";
 import { Home } from "../../features/Home/Home";
 const roomnavigator=createStackNavigator();
 import { NavigationContainer } from "@react-navigation/native";
@@ -22,6 +23,7 @@ export const RoomN=()=>{
             <roomnavigator.Screen name="Kitchen" component={Kitchen} />
             <roomnavigator.Screen name="BathRoom" component={BathRoom} />
             <roomnavigator.Screen name="Livingroom" component={Livingroom} />
+            <roomnavigator.Screen name="Settings" component={Settings} />
         </roomnavigator.Navigator>
         
         </NavigationContainer>

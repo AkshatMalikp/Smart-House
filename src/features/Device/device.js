@@ -32,9 +32,9 @@ const styles=StyleSheet.create({
       width:150,
       height:150,
       marginBottom:10,
-      marginLeft:10,
+      marginLeft:18,
       marginRight:10,
-      marginTop:10,
+      marginTop:15,
 
     },
 })

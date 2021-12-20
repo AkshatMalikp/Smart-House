@@ -17,7 +17,11 @@ export const Home=({navigation})=> {
 <Text style={{ fontWeight:'100',fontSize:15,fontStyle:'italic',marginBottom:10,}} >Welcome Home </Text>
 <Text style={{ fontWeight:'bold',fontSize:30,marginBottom:30,fontStyle:'italic'}}>Akshat Malik</Text>
 </View> 
+<TouchableOpacity onPress={()=>{
+  navigation.navigate('Settings')
+}}>
 <Image style={{width:80,height:80,paddingLeft:10,borderWidth:0.5,borderRadius:15,marginRight:15,}} source={require("../../assets/pp.jpg")}/>
+</TouchableOpacity>
 </View>
       
       

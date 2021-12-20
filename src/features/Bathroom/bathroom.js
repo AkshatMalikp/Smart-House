@@ -69,8 +69,23 @@ export const BathRoom=()=>{
                <Text style={{fontSize:17, color:'silver'}}>100%</Text>
              </View>
 
-             <Text style={{fontSize:25,marginTop:20,fontStyle:'italic'}} >Timer</Text>   
              
+             <Text style={{fontSize:25,marginTop:20,fontStyle:'italic'}} >Timer</Text>   
+
+             <View style={{flexDirection:'row',justifyContent:'space-between',marginTop:20,}}>
+               <Text style={{fontSize:20,}}>From</Text>
+               <Text style={{marginRight:185,fontSize:20}}>To</Text>
+             </View>
+             <View style={{flexDirection:'row'}}>
+             <View style={styles.timerconatiner}>
+               <Text style={{justifyContent:'center',alignItems:'center',alignSelf:'center',marginTop:12,fontSize:20,}}>06:00 PM</Text>
+             </View>
+             
+             <View style={styles.timerconatiner}>
+               <Text style={{justifyContent:'center',alignItems:'center',alignSelf:'center',marginTop:12,fontSize:20,}}>09:00 PM</Text>
+             </View>
+             </View>
+
           </ScrollView>
 
 
@@ -83,6 +98,16 @@ const styles=StyleSheet.create({
  area:{
   marginLeft:15,
  },
+ timerconatiner:{
+   borderColor:'black',
+   width:180,
+   height:50,
+   borderWidth:0.5,
+   borderRadius:15,
+   marginTop:15,
+   marginRight:15,
+ backgroundColor:'skyblue',
+ }
 
 
 })

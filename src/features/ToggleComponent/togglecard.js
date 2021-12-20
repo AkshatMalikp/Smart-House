@@ -41,7 +41,7 @@ const styles=StyleSheet.create({
 
     cardborder:{
         width:300,
-        height:200,
+        height:250,
         marginTop:25,
         marginRight:15,
 
@@ -59,14 +59,14 @@ const styles=StyleSheet.create({
     },
     textstyle:{
         marginLeft:10,
-        marginTop:150,
+        marginTop:190,
         fontWeight:'900',
         fontSize:25,
         color:'white',
         fontStyle:'italic',
     },
     switchh:{
-       marginTop:145,
+       marginTop:190,
        marginRight:15,
 
     }
