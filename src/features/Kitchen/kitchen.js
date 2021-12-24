@@ -46,9 +46,9 @@ export const Kitchen=()=>{
           </ScrollView>
           <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
             <Togglecard name='Celing Light' link={require('../../assets/lightc.jpg')} />
-            <Togglecard name='Celing Light' link={require('../../assets/lightc.jpg')} />
-            <Togglecard name='Celing Light' link={require('../../assets/lightc.jpg')} />
-            <Togglecard name='Celing Light' link={require('../../assets/lightc.jpg')} />
+            <Togglecard name='Refregerator' link={require('../../assets/Fridge.jpg')} />
+            <Togglecard name='Exhaust' link={require('../../assets/EXHAUST.jpg')} />
+            <Togglecard name='Rangehood' link={require('../../assets/Rangehood.jpg')} />
             
           </ScrollView>
 

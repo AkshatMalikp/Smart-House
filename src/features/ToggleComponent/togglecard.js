@@ -62,7 +62,7 @@ const styles=StyleSheet.create({
         marginTop:190,
         fontWeight:'900',
         fontSize:25,
-        color:'white',
+        color:'grey',
         fontStyle:'italic',
     },
     switchh:{

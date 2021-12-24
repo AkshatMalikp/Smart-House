@@ -46,9 +46,9 @@ export const Bedroom=()=>{
           </ScrollView>
           <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
             <Togglecard name='Celing Light' link={require('../../assets/lightc.jpg')} />
-            <Togglecard name='Celing Light' link={require('../../assets/lightc.jpg')} />
-            <Togglecard name='Celing Light' link={require('../../assets/lightc.jpg')} />
-            <Togglecard name='Celing Light' link={require('../../assets/lightc.jpg')} />
+            <Togglecard name='Air Conditioner' link={require('../../assets/AC.jpg')} />
+            <Togglecard name='Heater' link={require('../../assets/Heater.jpg')} />
+            <Togglecard name='Celing Fan' link={require('../../assets/CFAN.jpg')} />
             
           </ScrollView>
 

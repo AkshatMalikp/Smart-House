@@ -20,9 +20,16 @@ export const Settings=()=>{
       </View>
 
       </View>
+
       <ScrollView>
+        
+      <View style={{flexDirection: 'row', alignItems: 'center',margin:15,}}>
+  <View style={{flex: 1, height: 1, backgroundColor: 'black'}} />
+     
+     </View>
           <TouchableOpacity>
-          <View style={{flexDirection:'row',justifyContent:'space-between',marginLeft:20,marginRight:20,marginTop:20,}}>
+            
+          <View style={{flexDirection:'row',justifyContent:'space-between',marginLeft:20,marginRight:20,}}>
           <Text style={{fontStyle:'italic',fontSize:'25'}}>Email</Text>
           <Image source={require('../../assets/sidearrow.jpg')} style={{height:25,width:25,}} />
           </View>
@@ -40,13 +47,17 @@ export const Settings=()=>{
           </View>
           </TouchableOpacity>
           <TouchableOpacity>
-          <View style={{flexDirection:'row',justifyContent:'space-between',marginLeft:20,marginRight:20,marginTop:20,marginBottom:50,}}>
+          <View style={{flexDirection:'row',justifyContent:'space-between',marginLeft:20,marginRight:20,marginTop:20,}}>
           <Text style={{fontStyle:'italic',fontSize:'25'}}>Security</Text>
           <Image source={require('../../assets/sidearrow.jpg')} style={{height:25,width:25,}} />
           </View>
           </TouchableOpacity>
+          <View style={{flexDirection: 'row', alignItems: 'center',margin:15,}}>
+  <View style={{flex: 1, height: 1, backgroundColor: 'black'}} />
+     
+     </View>
           <TouchableOpacity>
-          <View style={{flexDirection:'row',justifyContent:'space-between',marginLeft:20,marginRight:20,marginTop:20,}}>
+          <View style={{flexDirection:'row',justifyContent:'space-between',marginLeft:20,marginRight:20,}}>
           <Text style={{fontStyle:'italic',fontSize:'25'}}>Display Mode</Text>
           <Image source={require('../../assets/sidearrow.jpg')} style={{height:25,width:25,}} />
           </View>
@@ -99,5 +110,10 @@ const styles=StyleSheet.create({
   marginTop:25,
   marginLeft:20,
  },
+ sicons:{
+   
+  height:45,
+  width:45,
+ }
 
 })
